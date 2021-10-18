@@ -1,5 +1,5 @@
 from  bluepy.btle import Scanner
-import kalman as KalmanFilter
+from kalman import KalmanFilter
 scanner = Scanner()
 devices=scanner.scan(5.0)
 kalmanFilter = KalmanFilter(0.01,3)
