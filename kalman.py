@@ -42,22 +42,10 @@ class KalmanFilter:
         return self.x
 
     def last_measurement(self):
-        """
-        Returns the last measurement fed into the filter
-        :return: The last measurement fed into the filter
-        """
         return self.x
 
     def set_measurement_noise(self, noise):
-        """
-        Sets measurement noise
-        :param noise: The new measurement noise
-        """
         self.Q = noise
 
     def set_process_noise(self, noise):
-        """
-        Sets process noise
-        :param noise: The new process noise
-        """
         self.R = noise
